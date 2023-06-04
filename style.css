@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Turista Gorda NF W01 Regular";
+  src: url("3cfe6d7e2919d98e0c6994d3dfbeda2c.eot"); /* IE9*/
+  src: url("3cfe6d7e2919d98e0c6994d3dfbeda2c.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("3cfe6d7e2919d98e0c6994d3dfbeda2c.woff2") format("woff2"),
+    /* chrome、firefox */ url("3cfe6d7e2919d98e0c6994d3dfbeda2c.woff")
+      format("woff"),
+    /* chrome、firefox */ url("3cfe6d7e2919d98e0c6994d3dfbeda2c.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("3cfe6d7e2919d98e0c6994d3dfbeda2c.svg#Turista Gorda NF W01 Regular")
+      format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Posterface Condensed W00 Rg";
+  src: url("dd8c99526b82a2d176c19cdef27385a8.eot"); /* IE9*/
+  src: url("dd8c99526b82a2d176c19cdef27385a8.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("dd8c99526b82a2d176c19cdef27385a8.woff2") format("woff2"),
+    /* chrome、firefox */ url("dd8c99526b82a2d176c19cdef27385a8.woff")
+      format("woff"),
+    /* chrome、firefox */ url("dd8c99526b82a2d176c19cdef27385a8.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("dd8c99526b82a2d176c19cdef27385a8.svg#Posterface Condensed W00 Rg")
+      format("svg"); /* iOS 4.1- */
+}
+body {
+  font-family: "Posterface Condensed W00 Rg" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  font-size: 30px;
+}
+
+nav {
+  color: white;
+  background-color: #0b0b0b;
+  font-family: "Turista Gorda NF W01 Regular";
+}
+.quote {
+  background-image: url("bg.png");
+  height: 342px;
+  position: relative;
+}
+
+.about {
+  background-color: #0b0b0b;
+}
+.abouttext {
+  color: #ffdac5;
+}
+
+.aboutsubtext {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #ffdac5;
+  letter-spacing: 0px;
+}
+
+.aboutsubtext span {
+  color: lightblue;
+}
+.abouttext,
+.aboutsubtext {
+  padding: 30px;
+}
+.justtext {
+  padding: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #ffdac5;
+  letter-spacing: 0px;
+  text-align: left;
+  background-color: #0b0b0b;
+}
+.justtext a {
+  text-decoration: underline #aecee6 1px;
+  color: #aecee6;
+}
+.justtext p {
+  width: 70%;
+  margin: auto;
+}
+
+.awards {
+  background-color: #0b0b0b;
+}
+
+.album {
+  background-color: #0b0b0b;
+}
+.album span {
+    color: lightblue;
+  }
+
+
+  .album button{
+    border: 2px white solid;
+  }
+
+
+.album img {
+  margin: auto;
+}
+
+.didyouknowthattheresatunnelunderoceanblvd {
+width: 100%;
+}
+
+.gallary{
+    background-color: #0b0b0b;
+
+}
+.didyouknowthattheresatunnelunderoceanblvd button{
+  border: 2px white solid;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .abouttext {
+    font-size: 4rem;
+  }
+
+  .aboutsubtext {
+    font-size: 2rem;
+  }
+}

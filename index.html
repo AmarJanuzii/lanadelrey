@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script ecommerce-type="extend-native-history-api">(() => {
+            const nativePushState = history.pushState;
+            const nativeReplaceState = history.replaceState;
+            const nativeBack = history.back;
+            const nativeForward = history.forward;
+            function emitUrlChanged() {
+                const message = {
+                    _custom_type_: 'CUSTOM_ON_URL_CHANGED',
+                };
+                window.postMessage(message);
+            }
+            history.pushState = function () {
+                nativePushState.apply(history, arguments);
+                emitUrlChanged();
+            };
+            history.replaceState = function () {
+                nativeReplaceState.apply(history, arguments);
+                emitUrlChanged();
+            };
+            history.back = function () {
+                nativeBack.apply(history, arguments);
+                emitUrlChanged();
+            };
+            history.forward = function () {
+                nativeForward.apply(history, arguments);
+                emitUrlChanged();
+            };
+        })()</script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://amarjanuzii.github.io/LESSERAFIM/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <body>
+
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-neutral-950">
+            <a class="text-3xl font-bold leading-none" href="#">
+
+                <img src="Lana-Del-Rey-logo (1).png" class="" style="width:10% ; padding:20px;">
+            </a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul
+                class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-sm text-amber-300 hover:text-gray-500" href="#">Home</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a class="text-sm  text-gray-400  font-bold" href="#">About Us</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Services</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Pricing</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <img src="Lana-Del-Rey-logo (1).png" style="width:30% ;">
+
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Home</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">About Us</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Services</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Pricing</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>Copyright © 2021</span>
+                    </p>
+                </div>
+            </nav>
+        </div>
+        <div class="profGroup__mainImg"><img data-src="bannerImg.jpg" src="coverimg.png"
+                class="profGroup__mainImg__img lazyloaded" alt=""></div>
+        <div class="quote">
+            <h1 class="absolute text-3xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:text-3xl">
+                "Doing what you love is freedom. Loving what you do is happiness"</h1>
+        </div>
+        <div class="about">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/2 p-4 flex items-center order-2 lg:order-1">
+                    <div class="mx-auto">
+                        <h1 class="text-9xl font-bold mb-4 abouttext">About</h1>
+                        <p class="aboutsubtext text-xl lg:text-6xl"> <span>Elizabeth Woolridge Grant</span> (born June 21, 1985),
+                            known professionally as Lana Del Rey, is an American singer, songwriter, record producer,
+                            poet, model, and music video director.</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 flex items-center order-1 lg:order-2">
+                    <img src="aboutimg1.png" alt="Image" class="w-full h-full object-cover max-w-full">
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="flex flex-col lg:flex-row-reverse">
+                <div class="w-full lg:w-1/2 p-4 flex items-center">
+                    <div class="mx-auto">
+                        <p class="aboutsubtext text-xl lg:text-6xl"> Her music has been noted by critics for its
+                            stylized cinematic quality; its preoccupation
+                            with themes of tragic romance, glamour, and
+                            melancholia; and its references to pop
+                            culture, particularly 1950s and 1960s
+                            Americana.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 flex items-center">
+                    <img src="aboutimg2.png" alt="Image" class="w-full h-full object-cover max-w-full">
+                </div>
+            </div>
+        </div>
+<div class="justtext">
+    <p class=" text-xl lg:text-4xl"> Raised in Upstate New York, Del Rey moved to New York City in
+        2005 to embark on her music career. Following numerous projects
+        including her debut studio album and the unreleased Sirens, Del
+        Rey's breakthrough came after the viral success of her debut single
+        <a href=""> "Video Games"</a> in 2011. She then signed with Interscope and
+        Polydor later that year.
+        <br><br>
+        Her major-label debut  <a href=""> Born to Die (2012)</a>  proved an international
+        success and spawned her first top-ten single on the Billboard Hot
+        100 with the Cedric Gervais remix of  <a href="">Summertime Sadness"</a>. 
+        
+</div>
+
+
+<div class="awards">
+    <h1 class="text-9xl font-bold mb-4 abouttext">Awards</h1>
+<img src="awards.png" alt="">
+<br>
+
+</div>
+<div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl   font-bold mb-4 albumTitle">Born To Die<span> · 2012</span></h1>
+          <div class="flex justify-center">
+      
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/born-to-die/1440811595" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/4vXt6IpMcSnqonljffWlMI?si=upuTeMHeSCizBSWZNW3XKQ" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="Born to Die by Lana Del Rey.jpeg" alt="Album Cover" class="w-full  object-cover lg:w-2/4">
+        
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="Paradise_EP.png" alt="Album Cover" class="w-full object-cover lg:w-2/4">
+      </div>
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl font-bold mb-4 albumTitle"><span> 2012·</span> Paradise </h1>
+          <div class="flex justify-center">
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/paradise/1440853031" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/1JnjcAIKQ9TSJFVFierTB8?si=dwE0oDYiR4y1wj7E7XMBvg" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl   font-bold mb-4 albumTitle">Ultraviolence<span> · 2014</span></h1>
+          <div class="flex justify-center">
+      
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/ultraviolence/1440831284" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/2e3doCyb0qn2JeKLsh2Xbo?si=eyJ9APQtTzWzNZmYPaLgwg" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="Ultraviolance .jpeg" alt="Album Cover" class="w-full  object-cover lg:w-2/4">
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="Honeymoon.png" alt="Album Cover" class="w-full object-cover lg:w-2/4">
+      </div>
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl font-bold mb-4 albumTitle"><span> 2015 ·</span> Honeymoon </h1>
+          <div class="flex justify-center">
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/honeymoon/1440827260" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/2DpEBrjCur1ythIZ10gJWw?si=uFdHBah9T6yZeqcoD4Fs5Q" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl   font-bold mb-4 albumTitle">Lust For Life<span> · 2017</span></h1>
+          <div class="flex justify-center">
+      
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/lust-for-life/1440899893" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/7xYiTrbTL57QO0bb4hXIKo?si=LhLAe7KgS_2gUa-6TPHkqg" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="Lust for Life.png" alt="Album Cover" class="w-full  object-cover lg:w-2/4">
+        
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="Lana Del Rey_ Norman Fucking Rockwell!.jpeg" alt="Album Cover" class="w-full object-cover lg:w-2/4">
+      </div>
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl font-bold mb-4 albumTitle"><span> 2019 ·</span> Norman Fucking Rockwell! </h1>
+          <div class="flex justify-center">
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/norman-f-g-rockwell/1474669063" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/5XpEKORZ4y6OrCZSKsi46A?si=t2jCg6JeRziEUYWARi01Sw" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl   font-bold mb-4 albumTitle">Chemtrails over <br>the Country Club <span> · 2021</span></h1>
+          <div class="flex justify-center">
+      
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/chemtrails-over-the-country-club/1545567745" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/6QeosPQpJckkW0Obir5RT8?si=bjWo8zGmTTOd6sXyQwHQ6g" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="lana del rey chemtrails over the country club cotcc cocc alternative cover sessions.jpeg" alt="Album Cover" class="w-full  object-cover lg:w-2/4">
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="album">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2 flex items-center">
+        <img src="Blue Banisters Lana del Rey.jpeg" alt="Album Cover" class="w-full object-cover lg:w-2/4">
+      </div>
+      <div class="w-full lg:w-1/2 p-4 flex items-center">
+        <div class="mx-auto">
+          <h1 class="text-9xl font-bold mb-4 albumTitle"><span> 2021 ·</span> Blue Banisters </h1>
+          <div class="flex justify-center">
+            <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black">
+                Listen <Br> 
+                <a href="https://music.apple.com/us/album/blue-banisters/1584675130" target="_blank" class="w-6 h-6">
+                  <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+                </a>
+                <a href="https://open.spotify.com/album/2wwCc6fcyhp1tfY3J6Javr?si=qeFTxwQASSWUZsWmiQrJmw" target="_blank" class="w-6 h-6">
+                  <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+                </a>
+              </button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="didyouknowthattheresatunnelunderoceanblvd relative">
+    <img src="DID YOU KNOW THAT THERES A TUNNEL UNDER OCEAN BLVD.png" alt="">
+
+    <button class="rounded-full py-2 px-4 mx-2 flex items-center space-x-2 border-2 border-white hover:bg-white hover:text-black absolute top-0 right-0 mt-4 mr-4">
+        Stream it NOW <br>
+        <a href="https://music.apple.com/us/album/did-you-know-that-theres-a-tunnel-under-ocean-blvd/1655349115" target="_blank" class="w-10 h-10">
+          <img src="Apple_Music_icon.svg.png" alt="Apple Music" class="w-full h-full">
+        </a>
+        <a href="https://open.spotify.com/album/5HOHne1wzItQlIYmLXLYfZ?si=WkQ5a8VESS2H7bDqrF9DGg" target="_blank" class="w-10 h-10">
+          <img src="Spotify_icon.svg.png" alt="Spotify" class="w-full h-full">
+        </a>
+      </button> </div>
+  
+      <div class="lanadelreysaid">
+    <img src="lanadelreysaid.png" alt="">
+    
+    </div>
+
+   
+
+
+        <script>
+            // Burger menus
+            document.addEventListener('DOMContentLoaded', function () {
+                // open
+                const burger = document.querySelectorAll('.navbar-burger');
+                const menu = document.querySelectorAll('.navbar-menu');
+
+                if (burger.length && menu.length) {
+                    for (var i = 0; i < burger.length; i++) {
+                        burger[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+
+                // close
+                const close = document.querySelectorAll('.navbar-close');
+                const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+                if (close.length) {
+                    for (var i = 0; i < close.length; i++) {
+                        close[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+
+                if (backdrop.length) {
+                    for (var i = 0; i < backdrop.length; i++) {
+                        backdrop[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            });
+        </script>
+    </body>
+
+</html>
