@@ -27,6 +27,8 @@
       url("dd8c99526b82a2d176c19cdef27385a8.svg#Posterface Condensed W00 Rg")
       format("svg"); /* iOS 4.1- */
 }
+
+
 body {
   font-family: "Posterface Condensed W00 Rg" !important;
   font-style: normal;
@@ -95,28 +97,25 @@ nav {
   background-color: #0b0b0b;
 }
 .album span {
-    color: lightblue;
-  }
+  color: lightblue;
+}
 
-
-  .album button{
-    border: 2px white solid;
-  }
-
+.album button {
+  border: 2px white solid;
+}
 
 .album img {
   margin: auto;
 }
 
 .didyouknowthattheresatunnelunderoceanblvd {
-width: 100%;
+  width: 100%;
 }
 
-.gallary{
-    background-color: #0b0b0b;
-
+.gallary {
+  background-color: #0b0b0b;
 }
-.didyouknowthattheresatunnelunderoceanblvd button{
+.didyouknowthattheresatunnelunderoceanblvd button {
   border: 2px white solid;
   font-size: 40px;
 }
@@ -125,6 +124,7 @@ width: 100%;
   .abouttext {
     font-size: 4rem;
   }
+ 
 
   .aboutsubtext {
     font-size: 2rem;
